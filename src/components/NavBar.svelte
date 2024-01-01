@@ -23,7 +23,7 @@
 		display: flex;
 		align-items: center;
 		position: fixed;
-        background-color: #fff;
+		background-color: #fff;
 	}
 	h1 {
 		font-family: 'Satoshi-Variable', sans-serif;

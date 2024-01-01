@@ -8,7 +8,7 @@
 <style>
 	section {
 		width: 100%;
-		height: 78vh;
+		height: 74vh;
 		padding-top: 80px;
 		background-color: #f2f3f6;
 	}

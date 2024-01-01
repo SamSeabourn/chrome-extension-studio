@@ -1,12 +1,64 @@
 <script lang="ts">
-	// export let
+	import { fade } from 'svelte/transition';
+	import { onMount } from 'svelte';
+	import { backIn } from 'svelte/easing';
+
+	const popInDelay = 800;
+	const justNiceDuration = 2300;
+	let loaded = false;
+	let curr = 0;
+	let interval: number;
+	let timeout: number;
+	const words = ['Trackers, ', 'Ads, ', 'Bloat'];
+
+	onMount(() => {
+		loaded = true;
+		interval = setInterval(() => {
+			const element = document.getElementById(`word-${words[curr]}`);
+			if (element) {
+				element.style.opacity = '1';
+			}
+			if (curr > words.length) {
+				clearInterval(interval);
+			} else {
+				curr++;
+			}
+		}, popInDelay);
+
+		timeout = setTimeout(
+			() => {
+				const element = document.getElementById(`underline`);
+				if (element) {
+					element.style.width = '8rem';
+				}
+				clearTimeout(timeout);
+			},
+			popInDelay * (words.length + 1) + justNiceDuration
+		);
+	});
 </script>
 
-<div>
-	<p>
-		<span>Trackers, Bloat,<br>Ads<br /> </span>
-		<span class="bold-focused">Just <span class="underline">nice</span><br/> extensions</span>
-	</p>
+<div class="container">
+	{#if loaded}
+		<p>
+			{#each words as word, i}
+				{#if word}
+					<span class="bad-stuff" id={`word-${word}`} style="opacity: 0">{word}</span>
+				{/if}
+			{/each}
+			<br />
+			<span
+				transition:fade={{
+					delay: popInDelay * (words.length),
+					duration: justNiceDuration,
+					easing: backIn
+				}}
+				class="bold-focused"
+				>Just <div id="underline" />
+				<span id="nice" class="nice">nice</span><br /> extensions</span
+			>
+		</p>
+	{/if}
 </div>
 
 <style>
@@ -19,48 +71,42 @@
 	p {
 		font-family: 'GeneralSans-Variable';
 		font-size: 3.75rem;
-        font-weight: 500;
+		font-weight: 500;
+		color: #170d1e;
 	}
 
-	div {
+	span {
+		transition: opacity 500ms ease-in;
+	}
+
+	.bad-stuff {
+		padding: 0.25rem;
+		color: rgba(0, 0, 0, 0.33);
+		text-decoration: line-through grey;
+	}
+
+	.container {
 		height: 100%;
 		margin-left: 9.5rem;
 		display: flex;
 		align-items: center;
 	}
 
-    .bold-focused {
-        font-weight: 600;
-    }
+	.bold-focused {
+		font-weight: 600;
+	}
 
-    .underline {
-    position: relative;
-    padding-bottom: 0; /* Control the distance from the text */
-    cursor: pointer; /* Optional, for a pointer cursor on hover */
-}
+	.nice {
+		position: relative;
+	}
 
-.underline::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 0;
-    height: 1.5rem; /* Adjust the thickness of the underline */
-    background-color:#E8FF7C;
-    transition: width 0.5s ease;
-    mix-blend-mode: multiply;
-}
-
-.underline::after {
-    animation: underline-slide 2s forwards;
-}
-
-@keyframes underline-slide {
-    from {
-        width: 0;
-    }
-    to {
-        width: 100%;
-    }
-}
+	#underline {
+		position: absolute;
+		display: inline;
+		width: 0rem;
+		height: 2rem;
+		background-color: #e8ff7c;
+		transform: translateY(2rem);
+		transition: width 500ms ease-in;
+	}
 </style>
