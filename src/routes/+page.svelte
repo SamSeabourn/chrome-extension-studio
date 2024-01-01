@@ -1,4 +1,5 @@
 <script>
+	import AirGap from '../components/AirGap.svelte';
 	import ContentPadding from '../components/ContentPadding.svelte';
 	import ContentPanel from '../components/ContentPanel.svelte';
 	import HeroPanel from '../components/HeroPanel.svelte';
@@ -16,7 +17,11 @@
 	<ContentPadding>
 		<Title>About us</Title>
 		<Paragraph>
-			Chrome Extension Studio is a team of passionate software engineers committed to creating streamlined, secure Chrome extensions. Our apps are designed to be lightweight, free of bloat, trackers, and ads, ensuring a smooth and trustworthy user experience.
+			Chrome Extension Studio is a team of passionate software engineers committed to creating
+			streamlined, secure Chrome extensions. Our apps are designed to be lightweight, free of bloat,
+			trackers, and ads, ensuring a smooth and trustworthy user experience.
 		</Paragraph>
+		<AirGap />
+		<Title>Our extensions</Title>
 	</ContentPadding>
 </ContentPanel>
