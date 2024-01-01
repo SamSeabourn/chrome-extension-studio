@@ -24,6 +24,7 @@
 		align-items: center;
 		position: fixed;
 		background-color: #fff;
+		z-index: 30;
 	}
 	h1 {
 		font-family: 'Satoshi-Variable', sans-serif;

@@ -49,7 +49,7 @@
 			<br />
 			<span
 				transition:fade={{
-					delay: popInDelay * (words.length),
+					delay: popInDelay * words.length,
 					duration: justNiceDuration,
 					easing: backIn
 				}}
