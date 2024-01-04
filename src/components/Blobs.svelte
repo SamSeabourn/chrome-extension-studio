@@ -2,7 +2,7 @@
 	import { onMount } from 'svelte';
 
 	const yellowBlobStartPosition = 32; //vh
-	const yellowBlobSendPosition = 97; //vh
+	const yellowBlobSendPosition = 105; //vh
 
 	const leftBlobStartPosition = -114;
 	const leftBlobEndPosition = -42;
@@ -57,7 +57,7 @@
 		border-radius: 9rem;
 		right: 2rem;
 		z-index: 10;
-		transform: translateY(-109vh);
+		transform: translateY(-114vh);
 	}
 
 	.right-blob {
@@ -67,7 +67,7 @@
 		border-radius: 16rem;
 		right: 13rem;
 		z-index: 120;
-		transform: translateY(-92vh);
+		transform: translateY(-70vh);
 	}
 
 	.yellow-blob {
@@ -77,7 +77,7 @@
 		border-radius: 9rem;
 		right: 16.5rem;
 		z-index: 123;
-		transform: translateY(31vh);
+		transform: translateY(32vh);
 		filter: drop-shadow(0px 3px 9px rgba(0, 0, 0, 0.1));
 	}
 </style>
