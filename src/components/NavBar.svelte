@@ -28,7 +28,7 @@
 	}
 	h1 {
 		font-family: 'Satoshi-Variable', sans-serif;
-		margin-left: 2.75rem;
+		margin-left: 3rem;
 		font-size: 2rem;
 		font-weight: 900;
 		letter-spacing: -0.03rem;

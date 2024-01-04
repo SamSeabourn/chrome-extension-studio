@@ -1,6 +1,3 @@
-<script lang="ts">
-</script>
-
 <section id="hero">
 	<slot />
 </section>

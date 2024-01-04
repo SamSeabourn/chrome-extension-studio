@@ -33,7 +33,7 @@
 				}
 				clearTimeout(timeout);
 			},
-			popInDelay * (words.length + 1) + justNiceDuration
+			popInDelay * words.length + justNiceDuration
 		);
 	});
 </script>
@@ -41,7 +41,7 @@
 <div class="container">
 	{#if loaded}
 		<p>
-			{#each words as word, i}
+			{#each words as word}
 				{#if word}
 					<span class="bad-stuff" id={`word-${word}`} style="opacity: 0">{word}</span>
 				{/if}
@@ -94,6 +94,7 @@
 
 	.bold-focused {
 		font-weight: 600;
+		filter: drop-shadow(0px 3px 9px rgba(0, 0, 0, 0.1));
 	}
 
 	.nice {
@@ -107,6 +108,7 @@
 		height: 2rem;
 		background-color: #e8ff7c;
 		transform: translateY(2rem);
-		transition: width 500ms ease-in;
+		transition: width 333ms ease-in;
+		clip-path: polygon(2% 0%, 100% 0%, 98% 100%, 0% 100%);
 	}
 </style>
