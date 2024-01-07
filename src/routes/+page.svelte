@@ -78,9 +78,9 @@
 			enhanced and hassle-free online experience!
 		</Testimonial>
 		<AirGap />
-		<CTA href={'chromeextension.agency'}>
+		<!-- <CTA href={'www.google.com'}>
 			Want to make something together? <br /> See what we can do at
-		</CTA>
+		</CTA> -->
 		<AirGap />
 		<AirGap />
 	</ContentPadding>
