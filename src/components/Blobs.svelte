@@ -50,6 +50,8 @@
 		width: 9rem;
 	}
 
+
+
 	.left-blob {
 		width: 9rem;
 		height: 130vh;
@@ -79,5 +81,12 @@
 		z-index: 123;
 		transform: translateY(32vh);
 		filter: drop-shadow(0px 3px 9px rgba(0, 0, 0, 0.1));
+	}
+
+	@media (max-width: 500px) {
+		.right-blob, .left-blob, .yellow-blob  {
+			z-index: 5;
+		}
+
 	}
 </style>

@@ -35,4 +35,17 @@
 	.writeup {
 		margin-left: 1.5rem;
 	}
+
+	@media (max-width: 500px) {
+		.testimonal {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+		}
+
+		.writeup {
+			margin-top: 2rem;
+			margin-left: 0rem;
+		}
+	}
 </style>

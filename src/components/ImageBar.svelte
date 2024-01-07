@@ -15,4 +15,10 @@
 		display: block;
 		transform: translateZ(0);
 	}
+
+	@media (max-width: 500px) {
+		img {
+			max-width: 100%;
+		}
+	}
 </style>

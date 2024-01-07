@@ -1,10 +1,9 @@
 <script>
 	import { base } from '$app/paths'
-	// export const prerender = true;
 	import AirGap from '../components/AirGap.svelte';
 	import Blobs from '../components/Blobs.svelte';
 	import Button from '../components/Button.svelte';
-	// import CTA from '../components/CTA.svelte';
+	import CTA from '../components/CTA.svelte';
 	import ContentPadding from '../components/ContentPadding.svelte';
 	import ContentPanel from '../components/ContentPanel.svelte';
 	import FadeInOnScroll from '../components/FadeInOnScroll.svelte';
@@ -78,9 +77,9 @@
 			enhanced and hassle-free online experience!
 		</Testimonial>
 		<AirGap />
-		<!-- <CTA href={'www.google.com'}>
+		<CTA href={'chromeextension.agency'}>
 			Want to make something together? <br /> See what we can do at
-		</CTA> -->
+		</CTA>
 		<AirGap />
 		<AirGap />
 	</ContentPadding>

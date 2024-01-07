@@ -6,7 +6,7 @@
 	section {
 		width: 100%;
 		height: 74vh;
-		padding-top: 80px;
+		padding-top: 5rem;
 		background-color: #f2f3f6;
 	}
 </style>

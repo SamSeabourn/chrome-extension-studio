@@ -75,6 +75,17 @@
 		color: #170d1e;
 	}
 
+	@media (max-width: 500px) {
+		p {
+			z-index: 10;
+		}
+
+		div {
+			max-width: 59vw;;
+		}
+	
+	}
+
 	span {
 		transition: opacity 500ms ease-in;
 	}
@@ -90,6 +101,12 @@
 		margin-left: 9.5rem;
 		display: flex;
 		align-items: center;
+	}
+
+	@media (max-width: 500px) {
+		.container {
+			margin-left: 4.25rem;
+		}
 	}
 
 	.bold-focused {
