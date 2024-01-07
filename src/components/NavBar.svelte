@@ -1,10 +1,11 @@
 <script lang="ts">
+	import { base } from '$app/paths'
 	export let title: string;
 	export let logoSrc: string;
 </script>
 
 <nav>
-	<a href="/" aria-label="Homepage">
+	<a href="{base}/" aria-label="Home page">
 		<img src={logoSrc} alt="Chrome Extension Studio Logo" />
 	</a>
 	<h1>{title}</h1>

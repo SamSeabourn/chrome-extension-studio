@@ -3,7 +3,7 @@
 
 <footer>
 	<div class="wrapper">
-		<a href="mailto:chromeextensionstudio@gmail.com"
+		<a href="mailto:sam.seabourn@gmail.com"
 			><span class="mailbox">📫</span> chromeextensionstudio@gmail.com</a
 		>
 		<span> Built by... us obviously</span>
