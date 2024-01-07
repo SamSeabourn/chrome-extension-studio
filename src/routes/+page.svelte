@@ -1,10 +1,10 @@
 <script>
-	// import { base } from '$app/paths'
+	import { base } from '$app/paths'
 	// export const prerender = true;
 	import AirGap from '../components/AirGap.svelte';
 	import Blobs from '../components/Blobs.svelte';
 	import Button from '../components/Button.svelte';
-	import CTA from '../components/CTA.svelte';
+	// import CTA from '../components/CTA.svelte';
 	import ContentPadding from '../components/ContentPadding.svelte';
 	import ContentPanel from '../components/ContentPanel.svelte';
 	import FadeInOnScroll from '../components/FadeInOnScroll.svelte';
@@ -18,7 +18,7 @@
 	import Title from '../components/Title.svelte';
 </script>
 
-<NavBar title={'Chrome Extension Studio'} logoSrc="CES-Logo.svg" />
+<NavBar title={'Chrome Extension Studio'} logoSrc="{base}/CES-Logo.svg" />
 <Blobs />
 <HeroPanel>
 	<HeroText />
@@ -34,7 +34,7 @@
 		<AirGap />
 		<Title>Our extensions</Title>
 		<FadeInOnScroll id={'test0'}>
-			<ImageBar imageSource={'placeholder.png'} imageAlt="placeholder" />
+			<ImageBar imageSource='{base}/placeholder.png' imageAlt="placeholder" />
 			<Button
 				btnFunc={() => {
 					return {};
@@ -42,7 +42,7 @@
 			>
 		</FadeInOnScroll>
 		<FadeInOnScroll id={'test1'}>
-			<ImageBar imageSource={'placeholder.png'} imageAlt="placeholder" />
+			<ImageBar imageSource='{base}/placeholder.png' imageAlt="placeholder" />
 			<Button
 				btnFunc={() => {
 					return {};
@@ -50,7 +50,7 @@
 			>
 		</FadeInOnScroll>
 		<FadeInOnScroll id={'test3'}>
-			<ImageBar imageSource={'placeholder.png'} imageAlt="placeholder" />
+			<ImageBar imageSource='{base}/placeholder.png' imageAlt="placeholder" />
 			<Button
 				btnFunc={() => {
 					return {};
@@ -59,19 +59,19 @@
 		</FadeInOnScroll>
 		<AirGap />
 		<Title>Testimonials</Title>
-		<Testimonial imageSource={'persona.webp'} userName={'Zark Muckerberg'}>
+		<Testimonial imageSource='{base}/persona.webp' userName={'Zark Muckerberg'}>
 			I've been Slinky for a year, and they're fantastic. They're user-friendly, efficient,
 			and ad-free, significantly improving my browsing experience. It's great to find
 			extensions that are both powerful and simple to use. Highly recommend them for an
 			enhanced and hassle-free online experience!
 		</Testimonial>
-		<Testimonial imageSource={'persona.webp'} userName={'Jeave Stobs'}>
+		<Testimonial imageSource='{base}/persona.webp' userName={'Jeave Stobs'}>
 			I've been Slinky for a year, and they're fantastic. They're user-friendly, efficient,
 			and ad-free, significantly improving my browsing experience. It's great to find
 			extensions that are both powerful and simple to use. Highly recommend them for an
 			enhanced and hassle-free online experience!
 		</Testimonial>
-		<Testimonial imageSource={'persona.webp'} userName={'Melon Zusk'}>
+		<Testimonial imageSource='{base}/persona.webp' userName={'Melon Zusk'}>
 			I've been Slinky for a year, and they're fantastic. They're user-friendly, efficient,
 			and ad-free, significantly improving my browsing experience. It's great to find
 			extensions that are both powerful and simple to use. Highly recommend them for an
