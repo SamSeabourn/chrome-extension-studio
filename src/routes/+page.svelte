@@ -1,4 +1,6 @@
 <script>
+	// import { base } from '$app/paths'
+	// export const prerender = true;
 	import AirGap from '../components/AirGap.svelte';
 	import Blobs from '../components/Blobs.svelte';
 	import Button from '../components/Button.svelte';

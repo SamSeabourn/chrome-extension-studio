@@ -5,7 +5,6 @@
 
 	onMount(() => {
 		const divEl = document.getElementById(id);
-
 		const observer = new IntersectionObserver(
 			(entries) => {
 				entries.forEach((entry) => {
