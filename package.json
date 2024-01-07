@@ -2,6 +2,7 @@
 	"name": "chromeextensionstudio",
 	"version": "0.0.1",
 	"private": true,
+	"homepage": "https://samseabourn.github.io/chrome-extension-studio",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
