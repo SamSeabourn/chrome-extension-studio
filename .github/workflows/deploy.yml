@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: 'main'
+    branches: "main"
 
 jobs:
   build_site:
@@ -10,12 +10,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-
-      # If you're using pnpm, add this step then change the commands and cache key below to use `pnpm`
-      # - name: Install pnpm
-      #   uses: pnpm/action-setup@v2
-      #   with:
-      #     version: 8
 
       - name: Install Node.js
         uses: actions/setup-node@v3
@@ -28,7 +22,7 @@ jobs:
 
       - name: build
         env:
-          BASE_PATH: '/chrome-extension-studio'
+          BASE_PATH: "/chrome-extension-studio"
         run: |
           npm run build
 
@@ -36,7 +30,7 @@ jobs:
         uses: actions/upload-pages-artifact@v2
         with:
           # this should match the `pages` option in your adapter-static options
-          path: 'build/'
+          path: "build/"
 
   deploy:
     needs: build_site
