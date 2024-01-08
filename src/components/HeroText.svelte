@@ -81,9 +81,8 @@
 		}
 
 		div {
-			max-width: 59vw;;
+			max-width: 59vw;
 		}
-	
 	}
 
 	span {

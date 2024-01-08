@@ -1,10 +1,11 @@
 <script lang="ts">
 	export let href: string;
+	console.log(href);
 </script>
 
 <p>
 	<slot />
-	<a {href}>{href}</a>
+	<!-- <a href="https://www.google.com">{href}</a> -->
 </p>
 
 <style>
@@ -22,7 +23,7 @@
 		font-weight: 600;
 		line-height: 2.85rem;
 	}
-	a {
+	/* a {
 		color: #e8ff7c;
 		font-family: 'GeneralSans-Variable', sans-serif;
 		text-decoration: none;
@@ -37,5 +38,5 @@
 			-1px 1px 0 #e8ff7c,
 			1px 1px 0 #e8ff7c;
 		text-decoration: none;
-	}
+	} */
 </style>

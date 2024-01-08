@@ -9,7 +9,7 @@
 
 	@media (max-width: 500px) {
 		div {
-			max-width: 79vw;;
+			max-width: 79vw;
 			padding: 0 4.25rem 0 4.25rem;
 		}
 	}

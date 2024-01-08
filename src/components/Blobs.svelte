@@ -50,8 +50,6 @@
 		width: 9rem;
 	}
 
-
-
 	.left-blob {
 		width: 9rem;
 		height: 130vh;
@@ -84,9 +82,10 @@
 	}
 
 	@media (max-width: 500px) {
-		.right-blob, .left-blob, .yellow-blob  {
+		.right-blob,
+		.left-blob,
+		.yellow-blob {
 			z-index: 5;
 		}
-
 	}
 </style>

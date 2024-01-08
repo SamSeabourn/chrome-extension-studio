@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { base } from '$app/paths'
+	import { base } from '$app/paths';
 	export let title: string;
 	export let logoSrc: string;
 </script>

@@ -15,10 +15,4 @@
 		line-height: 1.3rem;
 		font-size: 1.25rem;
 	}
-
-	@media (max-width: 500px) {
-		div {
-			max-width: 30rem;;
-		}
-	}
 </style>
