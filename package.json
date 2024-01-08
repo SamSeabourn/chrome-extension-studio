@@ -8,7 +8,7 @@
 		"build": "vite build",
 		"preview": "vite preview",
 		"predeploy": "yarn run build",
-		"deploy": "gh-pages -d build",
+		"deploy": "NODE_ENV=production yarn build && yarn gh-pages -d build -t true",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"lint": "prettier --check . && eslint .",
