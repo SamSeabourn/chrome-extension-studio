@@ -81,7 +81,6 @@
 			Want to make something together? <br /> See what we can do at
 		</CTA>
 		<AirGap />
-		<Test />
 	</ContentPadding>
 	<Footer />
 </ContentPanel>
