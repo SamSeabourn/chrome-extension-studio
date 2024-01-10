@@ -96,7 +96,7 @@
 	.bad-stuff {
 		opacity: 1;
 		padding: 0.25rem;
-		color: #646464;
+		color: #929292;
 		text-decoration: line-through #170d1e;
 	}
 
