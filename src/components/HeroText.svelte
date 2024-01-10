@@ -97,7 +97,7 @@
 		opacity: 1;
 		padding: 0.25rem;
 		color: #646464;
-		text-decoration: line-through rgb(88, 88, 88);
+		text-decoration: line-through #170d1e;
 	}
 
 	.container {
