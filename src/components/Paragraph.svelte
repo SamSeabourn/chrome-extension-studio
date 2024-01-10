@@ -15,4 +15,10 @@
 		line-height: 1.3rem;
 		font-size: 1.25rem;
 	}
+
+	@media (max-width: 1640px) {
+		p {
+			width: 32.75rem;
+		}
+	}
 </style>

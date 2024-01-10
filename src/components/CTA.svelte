@@ -1,6 +1,5 @@
 <script lang="ts">
 	export let href: string;
-	console.log(href);
 </script>
 
 <p>
@@ -22,6 +21,14 @@
 		font-style: normal;
 		font-weight: 600;
 		line-height: 2.85rem;
+	}
+
+	@media (max-width: 1640px) {
+		P {
+			max-width: 49rem;
+			font-size: 2.5rem;
+			line-height: 2.2rem;
+		}
 	}
 	a {
 		color: #e8ff7c;

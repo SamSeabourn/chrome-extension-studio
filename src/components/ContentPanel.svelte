@@ -10,7 +10,7 @@
 		padding-top: 4rem;
 	}
 
-	@media (max-width: 500px) {
+	@media (max-width: 1280px) {
 		section {
 			z-index: 20;
 			position: absolute;

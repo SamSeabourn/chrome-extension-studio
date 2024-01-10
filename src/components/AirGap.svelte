@@ -2,6 +2,6 @@
 
 <style>
 	div {
-		height: 5rem;
+		height: 6rem;
 	}
 </style>

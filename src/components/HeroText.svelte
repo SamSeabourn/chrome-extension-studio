@@ -4,7 +4,7 @@
 	import { backIn } from 'svelte/easing';
 
 	const popInDelay = 800;
-	const justNiceDuration = 2300;
+	const justNiceDuration = 800 * 3 + 200;
 	let loaded = false;
 	let curr = 0;
 	let interval: number;
@@ -19,6 +19,10 @@
 				element.style.opacity = '1';
 			}
 			if (curr > words.length) {
+				const badStuff = document.getElementsByClassName(`bad-stuff`);
+				[...badStuff].forEach((el) => {
+					(el as HTMLSpanElement).style.opacity = '0.33';
+				});
 				clearInterval(interval);
 			} else {
 				curr++;
@@ -33,7 +37,7 @@
 				}
 				clearTimeout(timeout);
 			},
-			popInDelay * words.length + justNiceDuration
+			popInDelay * words.length + justNiceDuration + 1000
 		);
 	});
 </script>
@@ -75,7 +79,7 @@
 		color: #170d1e;
 	}
 
-	@media (max-width: 500px) {
+	@media (max-width: 1280px) {
 		p {
 			z-index: 10;
 		}
@@ -86,13 +90,14 @@
 	}
 
 	span {
-		transition: opacity 500ms ease-in;
+		transition: opacity 450ms ease-in;
 	}
 
 	.bad-stuff {
+		opacity: 1;
 		padding: 0.25rem;
-		color: rgba(0, 0, 0, 0.33);
-		text-decoration: line-through grey;
+		color: #646464;
+		text-decoration: line-through rgb(88, 88, 88);
 	}
 
 	.container {

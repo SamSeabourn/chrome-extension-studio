@@ -17,11 +17,6 @@
 	import Title from '../components/Title.svelte';
 </script>
 
-<svelte:head>
-	<meta property="og:image" content="{base}/CES-Logo.svg" />
-	<meta name="twitter:image" content="{base}/CES-Logo.svg" />
-</svelte:head>
-
 <NavBar title={'Chrome Extension Studio'} logoSrc="{base}/CES-Logo.svg" />
 <Blobs />
 <HeroPanel>

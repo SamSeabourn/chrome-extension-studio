@@ -9,7 +9,7 @@
 
 	h1,
 	span {
-		margin: 1.5rem 0;
+		margin: 2.5rem 0;
 		font-weight: 500;
 		font-family: 'GeneralSans-Variable';
 		font-size: 3rem;

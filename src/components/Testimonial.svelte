@@ -14,6 +14,7 @@
 		<div class="writeup">
 			<Paragraph>
 				<slot />
+				<br />
 				<span>{userName}</span>
 			</Paragraph>
 		</div>

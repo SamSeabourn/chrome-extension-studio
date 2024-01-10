@@ -81,7 +81,7 @@
 		filter: drop-shadow(0px 3px 9px rgba(0, 0, 0, 0.1));
 	}
 
-	@media (max-width: 500px) {
+	@media (max-width: 1280px) {
 		.right-blob,
 		.left-blob,
 		.yellow-blob {
